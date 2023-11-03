@@ -1,2 +1,17 @@
 test.sh
 import.sh
+
+/dist
+/.idea
+/.vscode
+/node_modules
+/package-lock.json
+/*.ts
+!/index.ts
+# Exclude jest config
+!/jest.config.ts
+/dist/*.js
+/yarn-error.log
+/yarn.lock
+/*.tgz
+/coverage

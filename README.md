@@ -1,38 +1,72 @@
-<p align="center">
-    <img src="gif/20221026_150902.gif" alt="gif animated" width="450" height="100">
-</p>
-
-# GCAndroid
+# Polycutter
 
 Project is free to use. If you bought it from someone, please refund\
 Join our [Discord](https://discord.gg/2TTSUZZ)
 
-# Note
-
-Unfortunately, my phone has died again, and as a result, I have to stop working on this project. I do not plan to update it in the future, even though I have created new code using Python and optimized the existing code. It's worth remembering that GCAndroid is only a tool designed to install Grasscutter on your Android device.
-
-For those who are curious, I used a Poco X3 Pro for this project, which is an excellent phone. However, I recently had an issue with it, and I took it to the service center, but unfortunately, they were not able to fix it effectively. I had to pay over $50, but the problem still persists.
+## Table of Contents
+- [About](#about)
+- [Prerequisites](#prerequisites)
+  - [Android](#android)
+  - [Windows](#windows)
+  - [Linux](#linux)
 
 ## About
 
-What can I do with a Localhost Server?
+This is still under development, and may will return error while processing installing Grasscutter.
+
+### What Can You Do with a Localhost Server?
 
 * The lowest Ping possible.
-* The abillity to change the (Banners, Events, Abyss, and etc)
+* The ability to change the (Banners, Events, Abyss, and etc)
 * Much more
-
-## Changelog
-
-For changelog, please check [here](https://github.com/Score-Inc/GCAndroid/blob/Server/CHANGELOG.md)
 
 ## Prerequisites
 
-The Requirements are as follows: [Termux](https://termux.dev/en/) and a ton of `Skillssss`. This may burden your phone, so it's not recommended for low spec devices.
+Before you can use Polycutter, you need to set up the required environment based on your operating system.
 
-## Download links
+### Android
 
-Download [Termux F-Droid](https://f-droid.org/repo/com.termux_118.apk)
+To use Polycutter on your Android device, follow these steps:
 
-## Install
+1. **Install Termux**: If you haven't already, you can download and install [Termux](https://f-droid.org/repo/com.termux_118.apk) from F-Droid.
 
-You can check our [Website](https://docs.elaxan.com/project/GCAndroid/install)
+2. **Install Node.js**:
+   ```bash
+   pkg up -y
+   pkg install nodejs -y
+   ```
+
+3. **Install Polycutter**:
+   ```bash
+   npm i -g polycutter
+   ```
+
+4. Once the installation is complete, you can start Polycutter by running the `polycutter` command.
+
+### Windows
+
+> :warning: Please note that `polycutter` has only been tested on Linux. Therefore, if you intend to use `polycutter` on Windows, you may encounter several errors. This is because some parts of the code rely on shell commands such as 'unzip.'
+
+If you are using Windows, follow these steps to set up Polycutter:
+
+1. **Install Node.js**: If you haven't already, download and install [Node.js](https://nodejs.org/en/download) for Windows.
+
+2. **Install Polycutter**:
+   ```bash
+   npm install -g polycutter
+   ```
+   
+Please make sure to consider potential compatibility issues when using `polycutter` on Windows.
+
+### Linux
+
+If you are using Linux, follow these steps to set up Polycutter:
+
+1. **Install Node.js**: If you don't have Node.js installed on your Linux distribution, you can refer to [nodesource](https://github.com/nodesource/distributions) for installation instructions specific to your distribution.
+
+2. **Install Polycutter**:
+   ```bash
+   npm i -g polycutter
+   ```
+
+Now that you've successfully set up Polycutter on your preferred platform.
